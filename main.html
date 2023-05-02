@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goFlow</title>
+    <link rel="icon" type="image/png" href="resources/trafficcone2.png" />
+ 
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!-- beginning -->
+    <!-- the first page -->
+
+    <div class="firstpage">
+
+        <div class="header">
+            <div class="name">GoFlow </div>
+
+            <div class="nav-bar">
+                <a href="#servicespage" class="nav-bar-item">ABOUT US</a>
+                <a href="" class="nav-bar-item">SERVICES</a>
+                <a href="" class="nav-bar-item">PRODUCTS</a>
+                <a href="" class="nav-bar-item">CONTACT US</a>
+            </div>
+        </div>
+        <div class="main-container">
+
+            <div class="tagline">
+                DISCOVER THE TRAFFIC OF TOMORROW<br>    
+                <!-- <a href="#map-beg"><button class="try">TRY FOR FREE</button></a> -->
+
+
+                <!-- temp deom -->
+                <a href="#map-beg" class="btn color-01">
+                    <span>TRY FOR FREE</span>
+                  </a>
+            
+            </div>
+
+                <div class="videofile">
+                    <div class="vidmask"><video width="320" height="240" autoplay loop muted>
+                        <source src="resources/main-vid.mp4" type="video/mp4" />
+                    </video>
+                </div></div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- the map page begins here -->
+
+
+    <div id="map-beg" class="location-input-page">
+        <input class="loc-input" type="text" placeholder="Choose start location">
+        <input class="loc-input" type="text" placeholder="Choose destination">
+        <button class="loc-button" ><i class="fa fa-search"></i></button>
+    </div>
+
+   <div class="map-container" id="map-container"> </div>
+
+    <a href="#about-page"> <div class="scroll-button-map"><span class="arrow arrow-bottom"></span></div></a>
+    <!-- the about page begins here -->
+    <!-- keep the page inside a div and span 100 -->
+
+    <div id="about-page" class="about-page">
+        fuck yeah
+    </div>
+
+    <!-- the services page, also 100 of window -->
+
+    <div class="service-page">
+        umm no
+    </div>
+
+    <!-- the ct page 100vh -->
+    
+    <div class="contact-page">
+        lol
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="servicespage" class="servicespage">
+
+        <div class="services-container">
+
+            <div class="animationfile">
+                <img style="max-width: 90%;" src="resources/servicespageanimation.gif" alt="booo">
+            </div>
+
+            <div class="services-text">
+                <div class="services-heading">SERVICES</div>
+        </div>
+    </div> -->
+
+
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZmVlZGxpZ2h0NDIiLCJhIjoiY2xnY3d5eW92MTF3bzNjcWxvbm83enk4YyJ9.y2k3VZCUGo5cvYNEfDp7pA';
+        var map = new mapboxgl.Map({
+          container: 'map-container',
+          style: 'mapbox://styles/feedlight42/clgqmxs0k00l501qxe6l42i05'
+        });
+
+      </script>
+      
+
+
+      <script src="main.js"></script>
+    
+</body>
+</html>
